@@ -25,7 +25,7 @@
             v-for="tab in tabs"
             :key="tab"
             @click="id = tab.id"
-            :class="`focus:outline-none hover:text-blue flex items-center py-2 px-4 hover:bg-lightblue rounded-full mr-auto mb-3 ${
+            :class="`focus:outline-none hover:text-blue flex items-center py-2 px-4 bg-lightblue-hover rounded-full mr-auto mb-3 ${
               id === tab.id ? 'text-blue' : ''
             }`"
           >
@@ -415,5 +415,9 @@ export default {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.bg-lightblue-hover:hover {
+  background-color: #e7e7e8;
 }
 </style>
