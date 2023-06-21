@@ -293,8 +293,9 @@ export default {
           id: "notifications",
         },
         { src: "envelope-regular.svg", title: "Messages", id: "messages" },
+        { src: "clipboard-regular.svg", title: "Lists", id: "lists" },
         { src: "bookmark-regular.svg", title: "Bookmarks", id: "bookmarks" },
-        { src: "fas fa-clipboard-list", title: "Lists", id: "lists" },
+
         { src: "far fa-user", title: "Profile", id: "profile" },
         { src: "fas fa-ellipsis-h", title: "More", id: "more" },
       ],
@@ -392,6 +393,6 @@ export default {
 }
 .svg-img {
   fill: none;
-  width: 25px;
+  width: 22px;
 }
 </style>
