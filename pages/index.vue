@@ -101,7 +101,7 @@
         <div class="flex-none">
           <img
             src="profile.png"
-            class="flex-none w-12 h-12 rounded-full border border-slate-200"
+            class="flex-none w-12 h-12 rounded-full border border-slate-200 cursor-pointer"
           />
         </div>
         <form v-on:submit.prevent="addNewTweet" class="w-full px-4 relative">
@@ -110,7 +110,7 @@
             placeholder="What's up?"
             class="mt-3 pb-3 w-full focus:outline-none"
           />
-          <div class="flex items-center">
+          <div class="flex items-center cursor-pointer">
             <i class="fa-solid fa-image"></i>
             <i class="text-lg text-blue mr-4 far fa-image"></i>
             <i class="text-lg text-blue mr-4 fas fa-film"></i>
@@ -129,7 +129,7 @@
         <div
           v-for="tweet in tweets"
           :key="tweet"
-          class="w-full p-4 border-b hover:bg-lighter flex"
+          class="w-full p-4 border-b bg-lighter-hover flex cursor-pointer"
         >
           <div class="flex-none mr-4">
             <img src="profile.png" class="h-12 w-12 rounded-full flex-none" />
@@ -167,7 +167,7 @@
       <div
         v-for="follow in following"
         :key="follow"
-        class="w-full p-4 border-b hover:bg-lighter flex"
+        class="w-full p-4 border-b bg-lighter-hover flex cursor-pointer"
       >
         <div class="flex-none mr-4">
           <img
@@ -240,7 +240,7 @@
           <i class="fas fa-angle-down text-lg text-dark"></i>
         </button>
         <button
-          class="p-3 w-full hover:bg-lighter text-left text-blue border-t border-slate-200"
+          class="p-3 w-full bg-lighter-hover text-left text-blue border-t border-slate-200"
         >
           Show More
         </button>
@@ -269,7 +269,7 @@
           </button>
         </button>
         <button
-          class="p-3 w-full hover:bg-lighter text-left text-blue border-t border-slate-200"
+          class="p-3 w-full bg-lighter-hover text-left text-blue border-t border-slate-200"
         >
           Show More
         </button>
@@ -394,6 +394,7 @@ export default {
 
 .bg-lighter {
   background-color: #eff3f4;
+  cursor: pointer;
 }
 
 .bg-lightest {
@@ -410,5 +411,9 @@ export default {
 
 .bg-darkblue:hover {
   background-color: #1a8cd8;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 </style>
