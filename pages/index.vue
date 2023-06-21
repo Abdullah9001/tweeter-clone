@@ -9,6 +9,7 @@
           class="h-12 w-12 hover:bg-lightblue text-3xl rounded-full text-blue"
         >
           <svg
+            class="svg-icon"
             xmlns="http://www.w3.org/2000/svg"
             height="1em"
             viewBox="0 0 512 512"
@@ -28,7 +29,7 @@
               id === tab.id ? 'text-blue' : ''
             }`"
           >
-            <img :src="`${tab.src}`" class="text-2xl mr-4 text-left" />
+            <img :src="`${tab.src}`" class="text-3xl mr-4" />
             <p class="text-lg font-semibold text-left hidden lg:block">
               {{ tab.title }}
             </p>
@@ -375,5 +376,9 @@ export default {
 }
 #app {
   font-family: Arial, Helvetica, sans-serif;
+}
+.svg-icon {
+  margin-left: 1rem;
+  fill: #1d9bf0;
 }
 </style>
