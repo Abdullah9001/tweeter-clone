@@ -29,7 +29,7 @@
               id === tab.id ? 'text-blue' : ''
             }`"
           >
-            <img :src="`${tab.src}`" class="text-3xl mr-4" />
+            <img :src="`${tab.src}`" class="text-3xl mr-4 svg-img" />
             <p class="text-lg font-semibold text-left hidden lg:block">
               {{ tab.title }}
             </p>
@@ -38,8 +38,7 @@
         <button
           class="text-white bg-blue rounded-full font-semibold focus:outline-none w-12 h-12 lg:h-auto lg:w-full p-3 hover:bg-darkblue"
         >
-          <p class="hidden lg:block">Tweet</p>
-          <i class="fas fa-plus lg:hidden"></i>
+          <p class="hidden tweet lg:block">Tweet</p>
         </button>
       </div>
       <div class="lg:w-full relative">
@@ -380,5 +379,15 @@ export default {
 .svg-icon {
   margin-left: 1rem;
   fill: #1d9bf0;
+}
+
+.tweet {
+  background-color: #1d9bf0;
+  padding: 1rem 0;
+  border-radius: 2rem;
+}
+.svg-img {
+  fill: none;
+  width: 25px;
 }
 </style>
