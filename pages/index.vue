@@ -2,7 +2,7 @@
   <div id="app" class="flex container h-screen w-full">
     <!-- side nav -->
     <div
-      class="lg:w-1/5 border-r border-lighter px-2 lg:px-6 py-2 flex flex-col justify-between"
+      class="lg:w-1/5 border-r border-slate-200 px-2 lg:px-6 py-2 flex flex-col justify-between"
     >
       <div>
         <button
@@ -36,7 +36,7 @@
           </button>
         </div>
         <button
-          class="text-white bg-blue rounded-full font-semibold focus:outline-none w-12 h-12 lg:h-auto lg:w-full p-3 hover:bg-darkblue"
+          class="text-white bg-blue rounded-full font-semibold focus:outline-none w-12 h-12 lg:h-auto lg:w-full p-3 bg-darkblue"
         >
           <p class="hidden tweet lg:block">Tweet</p>
         </button>
@@ -92,16 +92,16 @@
     <!-- tweets -->
     <div class="w-full md:w-1/2 h-full overflow-y-scroll">
       <div
-        class="px-5 py-3 border-b border-lighter flex items-center justify-between"
+        class="px-5 py-3 border-b border-slate-200 flex items-center justify-between"
       >
         <h1 class="text-xl font-bold">Home</h1>
         <i class="far fa-star text-xl text-blue"></i>
       </div>
-      <div class="px-5 py-3 border-b-8 border-lighter flex">
+      <div class="px-5 py-3 border-b-8 border-slate-200 flex">
         <div class="flex-none">
           <img
             src="profile.png"
-            class="flex-none w-12 h-12 rounded-full border border-lighter"
+            class="flex-none w-12 h-12 rounded-full border border-slate-200"
           />
         </div>
         <form v-on:submit.prevent="addNewTweet" class="w-full px-4 relative">
@@ -119,7 +119,7 @@
           </div>
           <button
             type="submit"
-            class="h-10 px-4 text-white font-semibold bg-blue hover:bg-darkblue focus:outline-none rounded-full absolute bottom-0 right-0"
+            class="h-10 px-4 text-white font-semibold bg-blue bg-darkblue focus:outline-none rounded-full absolute bottom-0 right-0"
           >
             Tweet
           </button>
@@ -224,7 +224,7 @@
         <button
           v-for="trend in trending"
           :key="trend"
-          class="w-full flex justify-between bg-lighter-hover p-3 border-t border-lighter"
+          class="w-full flex justify-between bg-lighter-hover p-3 border-t border-slate-200"
         >
           <div>
             <p class="text-xs text-left leading-tight text-dark">
@@ -240,7 +240,7 @@
           <i class="fas fa-angle-down text-lg text-dark"></i>
         </button>
         <button
-          class="p-3 w-full hover:bg-lighter text-left text-blue border-t border-lighter"
+          class="p-3 w-full hover:bg-lighter text-left text-blue border-t border-slate-200"
         >
           Show More
         </button>
@@ -252,11 +252,11 @@
         <button
           v-for="friend in friends"
           :key="friend"
-          class="w-full flex bg-lighter-hover p-3 border-t border-lighter"
+          class="w-full flex bg-lighter-hover p-3 border-t border-slate-200"
         >
           <img
             :src="`${friend.src}`"
-            class="w-12 h-12 rounded-full border border-lighter"
+            class="w-12 h-12 rounded-full border border-slate-200"
           />
           <div class="hidden lg:block ml-4">
             <p class="text-sm font-bold leading-tight">{{ friend.name }}</p>
@@ -269,7 +269,7 @@
           </button>
         </button>
         <button
-          class="p-3 w-full hover:bg-lighter text-left text-blue border-t border-lighter"
+          class="p-3 w-full hover:bg-lighter text-left text-blue border-t border-slate-200"
         >
           Show More
         </button>
@@ -386,11 +386,6 @@ export default {
   fill: #1d9bf0;
 }
 
-.tweet {
-  background-color: #1d9bf0;
-  padding: 1rem 0;
-  border-radius: 2rem;
-}
 .svg-img {
   fill: none;
   width: 22px;
@@ -407,5 +402,13 @@ export default {
 
 .bg-lighter-hover:hover {
   background-color: #eff1f1;
+}
+
+.bg-darkblue {
+  background-color: #1d9bf0;
+}
+
+.bg-darkblue:hover {
+  background-color: #1a8cd8;
 }
 </style>
