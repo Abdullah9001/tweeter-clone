@@ -111,7 +111,6 @@
             class="mt-3 pb-3 w-full focus:outline-none"
           />
           <div class="flex items-center cursor-pointer">
-            <i class="fa-solid fa-image"></i>
             <i class="text-lg text-blue mr-4 far fa-image"></i>
             <i class="text-lg text-blue mr-4 fas fa-film"></i>
             <i class="text-lg text-blue mr-4 far fa-chart-bar"></i>
