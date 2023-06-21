@@ -28,7 +28,7 @@
               id === tab.id ? 'text-blue' : ''
             }`"
           >
-            <i :class="`${tab.icon} text-2xl mr-4 text-left`"></i>
+            <i :class="`${tab.src} text-2xl mr-4 text-left`"></i>
             <p class="text-lg font-semibold text-left hidden lg:block">
               {{ tab.title }}
             </p>
@@ -285,7 +285,7 @@ export default {
   data() {
     return {
       tabs: [
-        { icon: "fas fa-home", title: "Home", id: "home" },
+        { src: "house-solid.svg", title: "Home", id: "home" },
         { icon: "fas fa-hashtag", title: "Explore", id: "explore" },
         { icon: "far fa-bell", title: "Notifications", id: "notifications" },
         { icon: "far fa-envelope", title: "Messages", id: "messages" },
