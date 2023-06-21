@@ -295,7 +295,7 @@ export default {
         { src: "envelope-regular.svg", title: "Messages", id: "messages" },
         { src: "clipboard-regular.svg", title: "Lists", id: "lists" },
         { src: "bookmark-regular.svg", title: "Bookmarks", id: "bookmarks" },
-
+        { src: "certificate-solid.svg", title: "Verified", id: "Verified" },
         { src: "far fa-user", title: "Profile", id: "profile" },
         { src: "fas fa-ellipsis-h", title: "More", id: "more" },
       ],
@@ -394,5 +394,6 @@ export default {
 .svg-img {
   fill: none;
   width: 22px;
+  height: 22px;
 }
 </style>
