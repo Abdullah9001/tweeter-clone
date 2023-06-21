@@ -28,7 +28,7 @@
               id === tab.id ? 'text-blue' : ''
             }`"
           >
-            <i :class="`${tab.src} text-2xl mr-4 text-left`"></i>
+            <img :src="`${tab.src}`" class="text-2xl mr-4 text-left" />
             <p class="text-lg font-semibold text-left hidden lg:block">
               {{ tab.title }}
             </p>
