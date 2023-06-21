@@ -207,7 +207,7 @@
     </div>
     <!-- trending -->
     <div
-      class="md:block hidden w-1/3 h-full border-l border-lighter py-2 px-6 overflow-y-scroll relative"
+      class="md:block hidden w-1/3 h-full border-l border-slate-200 py-2 px-6 overflow-y-scroll relative"
     >
       <input
         class="pl-12 rounded-full w-full p-2 bg-lighter text-sm mb-4"
@@ -224,7 +224,7 @@
         <button
           v-for="trend in trending"
           :key="trend"
-          class="w-full flex justify-between hover:bg-lighter p-3 border-t border-lighter"
+          class="w-full flex justify-between bg-lighter-hover p-3 border-t border-lighter"
         >
           <div>
             <p class="text-xs text-left leading-tight text-dark">
@@ -252,7 +252,7 @@
         <button
           v-for="friend in friends"
           :key="friend"
-          class="w-full flex hover:bg-lighter p-3 border-t border-lighter"
+          class="w-full flex bg-lighter-hover p-3 border-t border-lighter"
         >
           <img
             :src="`${friend.src}`"
@@ -395,5 +395,17 @@ export default {
   fill: none;
   width: 22px;
   height: 22px;
+}
+
+.bg-lighter {
+  background-color: #eff3f4;
+}
+
+.bg-lightest {
+  background-color: #f7f9f9;
+}
+
+.bg-lighter-hover:hover {
+  background-color: #eff1f1;
 }
 </style>
