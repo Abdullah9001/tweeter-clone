@@ -297,7 +297,7 @@ export default {
         { src: "bookmark-regular.svg", title: "Bookmarks", id: "bookmarks" },
         { src: "certificate-solid.svg", title: "Verified", id: "Verified" },
         { src: "user-regular.svg", title: "Profile", id: "profile" },
-        { src: "fas fa-ellipsis-h", title: "More", id: "more" },
+        { src: "ellipsis-solid.svg", title: "More", id: "more" },
       ],
       id: "home",
       dropdown: false,
