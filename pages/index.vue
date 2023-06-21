@@ -287,7 +287,11 @@ export default {
       tabs: [
         { src: "house-solid.svg", title: "Home", id: "home" },
         { src: "magnifying-glass-solid.svg", title: "Explore", id: "explore" },
-        { src: "bell-regula", title: "Notifications", id: "notifications" },
+        {
+          src: "bell-regular.svg",
+          title: "Notifications",
+          id: "notifications",
+        },
         { src: "far fa-envelope", title: "Messages", id: "messages" },
         { src: "far fa-bookmark", title: "Bookmarks", id: "bookmarks" },
         { src: "fas fa-clipboard-list", title: "Lists", id: "lists" },
