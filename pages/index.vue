@@ -292,7 +292,7 @@ export default {
           title: "Notifications",
           id: "notifications",
         },
-        { src: "far fa-envelope", title: "Messages", id: "messages" },
+        { src: "envelope-regular.svg", title: "Messages", id: "messages" },
         { src: "far fa-bookmark", title: "Bookmarks", id: "bookmarks" },
         { src: "fas fa-clipboard-list", title: "Lists", id: "lists" },
         { src: "far fa-user", title: "Profile", id: "profile" },
